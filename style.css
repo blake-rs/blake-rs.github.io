@@ -1,0 +1,17 @@
+/* 
+    Main Background colour: #282C33
+    Accent colour: #C778DD
+    Text colour: #C778DD;
+*/
+
+* {
+    background-color: #282C33;
+}
+
+p1 {
+    color: #c778dd;
+}
+
+a {
+    color: #c778dd;
+}
