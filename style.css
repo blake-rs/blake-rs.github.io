@@ -7,7 +7,8 @@
 
 body {
   background-color: #1e1e2e;
-  font-family: 'Courier New', monospace;
+  font-family: 'Fira Code', monospace;
+  font-weight: 300;
   color: #ffffff;
 }
 
@@ -83,7 +84,6 @@ header.navbar {
 
   text-decoration: none;
   color: #b0b0b0;
-  font-weight: 500;
   transition: color 0.3s ease;
 }
 
@@ -99,7 +99,7 @@ a {
   height: 100%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 576px) {
   .p-menu1 {
     display: none;
   }
@@ -173,7 +173,7 @@ a {
   text-align: center;
   height: 0px;
   overflow: hidden;
-  transition: height 9.4s ease;
+  transition: height 0.4s ease;
   z-index: 9;
   -webkit-transition: all 0.9s ease;
   transition: all 0.3s ease;
@@ -193,7 +193,7 @@ a {
   margin: 0;
   padding: 10px 0;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #b0b0b0;
   font-weight: 400;
 }
@@ -223,7 +223,7 @@ a {
 
 .hero {
   top: 25%;
-  left: 25%;
+  left: 15%;
   position: absolute;
 
   /* adjust to fit your largest Hello */
@@ -274,8 +274,33 @@ a {
 
 
 }
+
 .hero .button-cta:hover {
-  background-color: rgba(199, 120, 221, 0.15); /* light purple with 20% opacity */
+  background-color: rgba(199, 120, 221, 0.15);
+  /* light purple with 20% opacity */
   transition: all 0.3s ease;
   /* smooth transition */
+}
+
+.projects-home {
+  margin-top: clamp(70vh, 100vw, 100vh);
+
+
+
+}
+
+.projects-home h2 {
+  font-weight: 400;
+  position: relative;
+  left: 15%;
+  margin-bottom:clamp(20px, 50px, 50px);
+}
+
+.card {
+  border: #c778dd 1px solid;
+  border-radius: 0;
+  background-color: #1e1e2e;
+}
+.row{
+  margin: 0 10%;
 }
