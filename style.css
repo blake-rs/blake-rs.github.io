@@ -284,16 +284,15 @@ a {
 
 .projects-home {
   margin-top: clamp(70vh, 100vw, 100vh);
-
-
-
 }
 
 .projects-home h2 {
   font-weight: 400;
   position: relative;
   left: 15%;
-  margin-bottom:clamp(20px, 50px, 50px);
+  margin-bottom: clamp(20px, 50px, 50px);
+  width: min-content;
+  
 }
 
 .card {
@@ -301,6 +300,48 @@ a {
   border-radius: 0;
   background-color: #1e1e2e;
 }
-.row{
+
+.row {
   margin: 0 10%;
+}
+
+.topper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* space between items */
+}
+
+.topper {
+  display:flex;
+  justify-content: space-between;
+  align-content:baseline;
+
+}
+
+.topper a {
+  align-self:baseline;
+  padding-top: clamp(0, 0.5rem, 0.5rem);
+  margin-right: 15%;
+  margin-top:0;
+  text-decoration: underline;
+  color: #b0b0b0;
+  font-weight:400;
+}
+.topper a:hover {
+  color: #c778dd;
+
+  transition: all 0.3s ease;
+}
+
+.topper .h2::after {
+  content: "";
+  display: block;
+  width: 10vw;
+  height: 1px;
+  background-color: #c778dd;
+  position: absolute;
+  top: 50%;
+  right: -16px;
+  transform: translate(100%, -50%);
 }
