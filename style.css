@@ -290,19 +290,10 @@ a {
   font-weight: 400;
   position: relative;
   left: 15%;
-  margin-bottom: clamp(20px, 50px, 50px);
+
   width: min-content;
+  display:inline-block;
   
-}
-
-.card {
-  border: #c778dd 1px solid;
-  border-radius: 0;
-  background-color: #1e1e2e;
-}
-
-.row {
-  margin: 0 10%;
 }
 
 .topper {
@@ -315,15 +306,14 @@ a {
 .topper {
   display:flex;
   justify-content: space-between;
-  align-content:baseline;
+  align-content:center;
 
 }
 
 .topper a {
-  align-self:baseline;
+
   padding-top: clamp(0, 0.5rem, 0.5rem);
   margin-right: 15%;
-  margin-top:0;
   text-decoration: underline;
   color: #b0b0b0;
   font-weight:400;
@@ -344,4 +334,27 @@ a {
   top: 50%;
   right: -16px;
   transform: translate(100%, -50%);
+}
+
+@media (max-width: 768px) {
+  .topper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+
+  }
+  .topper a {
+    margin-left:15%;
+  }
+
+}
+  
+.card {
+  border: #c778dd 1px solid;
+  border-radius: 0;
+  background-color: #1e1e2e;
+}
+
+.row {
+  margin: 0 10%;
 }
