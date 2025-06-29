@@ -97,6 +97,8 @@ a {
 
 .p-menu1 {
   height: 100%;
+ position:relative;
+ 
 }
 
 @media only screen and (min-width: 576px) {
@@ -108,6 +110,7 @@ a {
 
 /* Hamburger */
 .hamburger1 {
+  
   height: 45px;
   margin: 20px;
   display: -ms-grid;
@@ -160,7 +163,7 @@ a {
 /* Menu */
 .menu1 {
   width: 100%;
-  background-color: #1e1e2e;
+  background-color: transparent;
   margin: 0;
   display: -ms-grid;
   display: grid;
@@ -174,9 +177,13 @@ a {
   height: 0px;
   overflow: hidden;
   transition: height 0.4s ease;
-  z-index: 9;
   -webkit-transition: all 0.9s ease;
   transition: all 0.3s ease;
+  position: absolute;
+  top: 65px; /* Adjust as needed to sit below hamburger */
+  left: 0;
+  right: 0;
+  z-index: 10000; /* Higher than other elements */
 
 }
 
@@ -265,15 +272,16 @@ a {
 .hero .button-cta {
   margin-left: 4px;
   border: 1px solid #c778dd;
-  background-color: #1e1e2e;
+  background-color: transparent;
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
   padding: 0.5rem 1rem;
   text-decoration: none;
   font-size: clamp(0.8em, 1vw, 1rem);
-
-
 }
+
+
+
 
 .hero .button-cta:hover {
   background-color: rgba(199, 120, 221, 0.15);
@@ -284,13 +292,17 @@ a {
 
 .projects-home {
   margin-top: clamp(70vh, 100vw, 100vh);
+  
 }
 
-.projects-home h2 {
+.section-style {
+  margin-bottom:10vh;
+}
+
+.section-style h2 {
   font-weight: 400;
   position: relative;
   left: 15%;
-
   width: min-content;
   display:inline-block;
   
@@ -352,7 +364,7 @@ a {
 .card {
   border: #c778dd 1px solid;
   border-radius: 0;
-  background-color: #1e1e2e;
+  background-color: transparent;
 }
 
 .row {
