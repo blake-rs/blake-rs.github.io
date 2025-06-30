@@ -10,3 +10,26 @@ toggle.addEventListener('change', () => {
     }
   });
 });
+
+document.querySelectorAll('.link1').forEach(element => {
+  element.addEventListener('click', () => {
+    toggle.checked = !toggle.checked;
+    toggle.dispatchEvent(new Event('change'));
+  });
+});
+
+
+
+
+function checkScreenWidthAndClearBlur() {
+  if (window.innerWidth > 575) {
+    toggle.checked = false;
+    toggle.dispatchEvent(new Event('change'));
+  }
+}
+
+// Run on page load
+checkScreenWidthAndClearBlur();
+
+// Run when the window is resized
+window.addEventListener('resize', checkScreenWidthAndClearBlur);

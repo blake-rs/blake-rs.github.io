@@ -12,8 +12,8 @@ body {
   color: #ffffff;
 }
 
-.social-icons {
-  position: absolute;
+.main .social-icons {
+  position: fixed;
   top: 40px;
   left: 40px;
   display: flex;
@@ -22,7 +22,14 @@ body {
   z-index: 1000;
 }
 
-.social-icons i {
+@media only screen and (max-width: 576px) {
+  .main .social-icons {
+    position: absolute;
+  }
+}
+
+
+.main .social-icons i {
   color: #c778dd;
   z-index: 1000;
 
@@ -97,8 +104,8 @@ a {
 
 .p-menu1 {
   height: 100%;
- position:relative;
- 
+  position: relative;
+
 }
 
 @media only screen and (min-width: 576px) {
@@ -110,7 +117,7 @@ a {
 
 /* Hamburger */
 .hamburger1 {
-  
+
   height: 45px;
   margin: 20px;
   display: -ms-grid;
@@ -180,10 +187,12 @@ a {
   -webkit-transition: all 0.9s ease;
   transition: all 0.3s ease;
   position: absolute;
-  top: 65px; /* Adjust as needed to sit below hamburger */
+  top: 65px;
+  /* Adjust as needed to sit below hamburger */
   left: 0;
   right: 0;
-  z-index: 10000; /* Higher than other elements */
+  z-index: 10000;
+  /* Higher than other elements */
 
 }
 
@@ -232,8 +241,6 @@ a {
   top: 25%;
   left: 15%;
   position: absolute;
-
-  /* adjust to fit your largest Hello */
 }
 
 .hero h1 a {
@@ -292,11 +299,11 @@ a {
 
 .projects-home {
   margin-top: clamp(70vh, 100vw, 100vh);
-  
+
 }
 
 .section-style {
-  margin-bottom:10vh;
+  margin-bottom: 10vh;
 }
 
 .section-style h2 {
@@ -304,8 +311,8 @@ a {
   position: relative;
   left: 15%;
   width: min-content;
-  display:inline-block;
-  
+  display: inline-block;
+
 }
 
 .topper {
@@ -316,9 +323,9 @@ a {
 }
 
 .topper {
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  align-content:center;
+  align-content: center;
 
 }
 
@@ -328,8 +335,9 @@ a {
   margin-right: 15%;
   text-decoration: underline;
   color: #b0b0b0;
-  font-weight:400;
+  font-weight: 400;
 }
+
 .topper a:hover {
   color: #c778dd;
 
@@ -355,12 +363,13 @@ a {
     gap: 0.5rem;
 
   }
+
   .topper a {
-    margin-left:15%;
+    margin-left: 15%;
   }
 
 }
-  
+
 .card {
   border: #c778dd 1px solid;
   border-radius: 0;
@@ -369,4 +378,49 @@ a {
 
 .row {
   margin: 0 10%;
+}
+
+.footer {
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.footer .social-icons a {
+    color: #b0b0b0;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #c778dd;
+}
+
+.footer hr {
+color: #c778dd;
+opacity:0.6;
+}
+/* Projects Page styling */
+
+#projects-main h1{
+ top: 15%;
+  left: 20%;
+  position: absolute;
+}
+@media only screen and (max-width: 576px) {
+  #projects-main h1{
+    position: static; /* or relative */
+    margin: 0 auto;
+    width: fit-content; /* or a set width like 90% */
+    text-align: center;
+  }
+  #projects-main-cards {
+    margin-top: 10vh !important;
+    /* Adjusted for smaller screens */
+  }
+}
+
+#projects-main-cards {
+margin-top: 30vh;
+  
 }
