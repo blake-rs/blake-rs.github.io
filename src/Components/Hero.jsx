@@ -34,9 +34,11 @@ const Hero = () => {
           A Computer Science student at the University of Auckland, graduating
           in 2027
         </p>
-        <button className="border font-main font-light text-white border-accent px-4 py-2 mt-4 hover:bg-accent/20 transition">
-          See my projects
-        </button>
+        <a href="#projects">
+          <button className="border font-main font-light text-white border-accent px-4 py-2 mt-4 hover:bg-accent/20 transition">
+            See my projects
+          </button>
+        </a>
       </div>
     </>
   );

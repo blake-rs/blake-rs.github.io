@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="fixed w-full top-0 sm:right-[80px]  z-40 bg-transparent"
+      className="absolute w-full top-0 sm:right-[80px]  z-40 bg-transparent"
     >
       {({ open }) => (
         <>
