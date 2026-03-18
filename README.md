@@ -3,7 +3,7 @@
 A personal portfolio website built with **React** and **Tailwind CSS** to showcase my projects, skills, and contact information. Designed to be responsive and modern, with a clean UI and smooth interactions.
 
 ---
-![Tux, the Linux mascot](./src/assets/portfolio-image.png)
+![](./src/assets/portfolio-image.png)
 
 ## 🚀 Features
 
