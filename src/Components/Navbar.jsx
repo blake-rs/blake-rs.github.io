@@ -16,14 +16,14 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="absolute w-full top-0 sm:right-[80px]  z-50 bg-transparent"
+      className="fixed w-full top-0 sm:right-[80px]  z-40 bg-transparent"
     >
       {({ open }) => (
         <>
           {/* Solid overlay */}
           {open && <div className="fixed inset-0 bg-[#1e1e2e]/95 z-40"></div>}
 
-          <div className="flex h-16 items-center justify-end relative z-50 w-full px-4 sm:px-0">
+          <div className="flex h-16 items-center justify-end relative z-40 w-full px-4 sm:px-0">
             {/* Mobile menu button */}
             <div className="sm:hidden">
               <DisclosureButton className="inline-flex items-center justify-center p-2 text-accent">

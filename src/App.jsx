@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
+import SocialIcons from "./Components/SocialSidebar";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      <SocialIcons />
     </>
   );
 }
