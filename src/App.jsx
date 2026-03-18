@@ -6,6 +6,11 @@ import SocialIcons from "./Components/SocialSidebar";
 import SectionHeader from "./Components/SectionHeaders";
 import ProjectCard from "./Components/ProjectCard";
 
+import portfolioImg from './assets/portfolio-image.png';
+
+
+
+
 function App() {
   const skills = [
     "Python",
@@ -47,7 +52,7 @@ function App() {
               tech={["React", "Tailwind CSS", "JavaScript"]}
               github="https://github.com/blake-rs/portfolio-react"
               live="www"
-              image="./src/assets/portfolio-image.png"
+              image={portfolioImg}
             />
           </div>
         </section>
