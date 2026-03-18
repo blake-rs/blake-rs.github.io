@@ -15,7 +15,3 @@ A personal portfolio website built with **React** and **Tailwind CSS** to showca
 - **About Section** – Brief personal and educational info.  
 - **Contact Section** – Social icons for GitHub, LinkedIn, and email.  
 - **Interactive UI** – Hover effects, color changes, and solid overlay on mobile menu.
-
----
-
-## 📂 Project Structure
