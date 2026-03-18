@@ -30,7 +30,7 @@ const Hero = () => {
         <h2 className="font-main font-normal text-white mt-6 text-4xl">
           I'm Blake
         </h2>
-        <p className="font-poppins text-grey-300 max-w-md text-wrap mt-2 mr-10">
+        <p className="font-main text-grey-300 max-w-md text-wrap mt-2 mr-10">
           A Computer Science student at the University of Auckland, graduating
           in 2027
         </p>
