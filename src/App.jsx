@@ -45,7 +45,7 @@ function App() {
             linkText="See All Projects"
           />
 
-          <div className="grid grid-cols-3 grid-rows-auto gap-5 justify-items-center mx-25">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 justify-items-center mx-4 md:mx-25">
             <ProjectCard
               title="Personal Portfolio"
               description="A personal portfolio website built with React and Tailwind CSS to showcase my projects and skills."
@@ -54,6 +54,7 @@ function App() {
               live="www"
               image={portfolioImg}
             />
+
           </div>
         </section>
 

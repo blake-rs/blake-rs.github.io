@@ -10,7 +10,7 @@ const socials = [
 export default function SocialIcons({ menuOpen }) {
     
   return (
-    <div className="fixed top-5 left-10 sm:top-10 flex flex-row sm:flex-col  gap-4 z-50">
+    <div className="absolute top-5 left-10 sm:top-10 flex flex-row sm:flex-col  gap-4 z-50">
       {socials.map((social) => (
         <a
           key={social.label}
