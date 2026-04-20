@@ -79,8 +79,7 @@ function App() {
             I am a Computer Science student in my second year at the University
             of Auckland, graduating in 2027. I enjoy building full-stack
             applications, experimenting with modern frameworks, and constantly
-            learning new technologies. In my free time, I enjoy reading, going
-            to the gym, spending time outdoors on runs or hikes.
+            learning new technologies. 
           </p>
         </section>
 
